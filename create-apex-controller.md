@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 3&#58; Lightning App Builder Overview
+title: Module 3&#58; Lightning App Builder Overview 
 ---
 This module gives a quick tour of the Lightning App Builder.  
 
