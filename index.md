@@ -1,21 +1,19 @@
 ---
 layout: home
-title: Lightning App Builder Tutorial 
+title: Salesforce Connected Services Walkthrough 
 ---
-In this tutorial you will use Salesforce Lightning App Builder to create a custom application using components built with the Lightning Component Framework. This sample Field Sales app will give users the ability to quickly view their most important sales information in the Salesforce1 Mobile Application. This sample app includes both standard and custom components. To learn more about custom components, see the <a href="http://developerforce.github.io/lightning-components-tutorial/" target="_blank">Lightning Components Tutorial</a>.
+In this walkthrough you will use Salesforce Connected Service to add Salesforce data to an existing MVC Web App.  This walkthrough is intended to give you a feel for working with the Salesforce Connected Service and the Salesforce Toolkit for .NET.
 
 ## What You Will Learn
 
-- Use the Lightning App Builder
-- Work with Lightning Components and Actions in Lightning App Builder
-- Include your app in the Salesforce1 Mobile Application
+- How to add the Salesforce Connected Service in Visual Studio
+- Create a views and controller methods to display Salesforce data, create and edit Salesforce data and delete Salesforce data
+- Create a view and controller for handling errors when interacting with the Salesforce APIs
 
 ## Prerequisites
 
-- To complete this workshop, all you need is a modern browser and a connection to the Internet
-- A working knowledge of Salesforce administration is assumed
-- No prior knowledge of Salesforce Lightning Components is required
-
+- To complete this walkthrough, all you need is Visual Studio 15
+- No prior knowledge of Salesforce APIs is required
 
 ## Browser Requirements
 
