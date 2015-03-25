@@ -8,7 +8,7 @@ In this module, you will a new menu item to the sample menu to navigate to a lis
 ### Add a Menu Item for Salesforce Contacts
 
 - Open Views\Shared\_Layout.cshtml.
-- Within the ```<ul class="nav navbar-nav">``` div, add the highlighted code:
+- Within the ```<ul class="nav navbar-nav">``` div, add the last ```<li>``` to your code:
 
 ```html
 <ul class="nav navbar-nav">
