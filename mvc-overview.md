@@ -5,7 +5,7 @@ title: Module 1&#58; MVC Overview
 
 ## Creating an MVC app to view, edit and delete Salesforce Contacts
 
-# ASP.net MVC apps follow the Model-View-Controller pattern.
+### ASP.net MVC apps follow the Model-View-Controller pattern.
 
 In the following steps, you'll create:
 
