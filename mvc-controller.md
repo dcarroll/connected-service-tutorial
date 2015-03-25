@@ -13,7 +13,7 @@ In this module, you set up an MVC Controller to orchestrate the various views th
 
 # Implement the controller as follows:
 
-```c#
+```csharp
 using Salesforce.Common.Models;
 using System;
 using System.Collections.Generic;
