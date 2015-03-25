@@ -10,12 +10,13 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 > **Note:** Because we're using a new auth pattern for validating users inline, there are two extra **Partial** views added to the page.  Copying this code will add these views, however as you move past the sample and use the MVC View Scaffolding, be sure to add these partial views if you continue to use the auth pattern in the controllers.
 
 - Within the Controller.Index Method, right-click and select **Add View**
--- View name: **Index**
--- Template: **List**
--- Model: **Contact ([YourProjectName].Models.Salesforce)**
+  - View name: **Index**
+  - Template: **List**
+  - Model: **Contact ([YourProjectName].Models.Salesforce)**
 - Click Add
 - Replace the contents of the razor file with the following code:
 > **Note:** Replace the @model namespace WebApplication1 with the namespace of your project
+
 ```html
 @model IEnumerable<WebApplication1.Models.Salesforce.Contact>
 @{
