@@ -35,6 +35,6 @@ into any problem or if you have a suggestion to improve this workshop.
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="create-developer-edition.html" class="btn btn-default pull-right">Next <i class="glyphicon glyphicon-chevron-right"></i></a>
+<a href="mvc-overview.html" class="btn btn-default pull-right">Next <i class="glyphicon glyphicon-chevron-right"></i></a>
 </div>
 </div>
