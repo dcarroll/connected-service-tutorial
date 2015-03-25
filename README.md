@@ -1,1 +1,1 @@
-# lightning-app-builder-tutorial
+# connected-service-tutorial
