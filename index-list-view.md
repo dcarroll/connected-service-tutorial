@@ -7,7 +7,6 @@ In this module, you will add List View to view the list of Salesforce Contacts.
 
 Using MVC Scaffolding, we can build out the view based on the Model classes scaffolded based on the Salesforce objects.
 
-> **Note:** Because we're using a new auth pattern for validating users inline, there are two extra **Partial** views added to the page.  Copying this code will add these views, however as you move past the sample and use the MVC View Scaffolding, be sure to add these partial views if you continue to use the auth pattern in the controllers.
 
 - Within the Controller.Index Method, right-click and select **Add View**
   - View name: **Index**
