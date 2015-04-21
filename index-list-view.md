@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 4&#58; Add the List View
+title: Module 5&#58; Add the List View
 ---
 
 In this module, you will add List View to view the list of Salesforce Contacts.

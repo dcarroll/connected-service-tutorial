@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 5&#58; Add the Details View
+title: Module 6&#58; Add the Details View
 ---
 
 In this module, you will add a Details View to view the details of the selected Contact.

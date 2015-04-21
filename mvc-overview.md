@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 1&#58; MVC Overview
+title: Module 2&#58; MVC Overview
 ---
 
 ## Creating an MVC app to view, edit and delete Salesforce Contacts

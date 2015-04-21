@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 6&#58; Add the Edit View
+title: Module 7&#58; Add the Edit View
 ---
 
 In this module, you will add an Edit View to enable editing the selected Contact.

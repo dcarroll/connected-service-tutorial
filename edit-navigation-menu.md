@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 2&#58; Edit Navigation Menu
+title: Module 4&#58; Edit Navigation Menu
 ---
 
 In this module, you will add new menu item to the sample menu to navigate to a list view of your data.

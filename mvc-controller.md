@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 2&#58; Create MVC Controller
+title: Module 3&#58; Create MVC Controller
 ---
 
 In this module, you set up an MVC Controller to orchestrate the various views that will be created in the following modules.

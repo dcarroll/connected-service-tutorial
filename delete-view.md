@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 7&#58; Add the Delete View
+title: Module 8&#58; Add the Delete View
 ---
 
 In this module, you will add a Delete View to demonstrate how to delete the selected Contact.

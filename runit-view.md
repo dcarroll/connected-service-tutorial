@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 9&#58; Run It
+title: Module 10&#58; Run It
 ---
 
 In this module, you will exercise the various view created for your Connected Service app.

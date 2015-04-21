@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 8&#58; Add the Create View
+title: Module 9&#58; Add the Create View
 ---
 
 In this module, you will add a Create View to demonstrate how to create a new Contact.
