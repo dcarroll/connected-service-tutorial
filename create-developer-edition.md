@@ -21,6 +21,6 @@ In this module, you create a Developer Edition Account that provides you with a 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
 <a href="index.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
-<a href="setup-environment.html" class="btn btn-default pull-right">Next <i class="glyphicon glyphicon-chevron-right"></i></a>
+<a href="mvc-overview.html" class="btn btn-default pull-right">Next <i class="glyphicon glyphicon-chevron-right"></i></a>
 </div>
 </div>
