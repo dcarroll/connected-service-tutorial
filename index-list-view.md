@@ -80,64 +80,64 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 </table>
 ```
 <div style="display: none;" id="clipdata">
-@model IEnumerable<WebApplication1.Models.Salesforce.Contact>
+@model IEnumerable<span class="kwrd">&lt;</span><span class="html">WebApplication1.Models.Salesforce.Contact</span><span class="kwrd">&gt;</span>
 @{
     ViewBag.Title = "Contacts";
 }
-<h2>Contacts</h2>
-<p>
+<span class="kwrd">&lt;</span><span class="html">h2</span><span class="kwrd">&gt;</span>Contacts<span class="kwrd">&lt;/</span><span class="html">h2</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">p</span><span class="kwrd">&gt;</span>
     @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Salutation)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MailingCity)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MailingState)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.MailingCountry)
-        </th>
-        <th></th>
-    </tr>
+<span class="kwrd">&lt;/</span><span class="html">p</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">table</span> <span class="attr">class</span><span class="kwrd">="table"</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">tr</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">th</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.Salutation)
+        <span class="kwrd">&lt;/</span><span class="html">th</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">th</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.FirstName)
+        <span class="kwrd">&lt;/</span><span class="html">th</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">th</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.LastName)
+        <span class="kwrd">&lt;/</span><span class="html">th</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">th</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.MailingCity)
+        <span class="kwrd">&lt;/</span><span class="html">th</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">th</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.MailingState)
+        <span class="kwrd">&lt;/</span><span class="html">th</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">th</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.MailingCountry)
+        <span class="kwrd">&lt;/</span><span class="html">th</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">th</span><span class="kwrd">&gt;&lt;/</span><span class="html">th</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">tr</span><span class="kwrd">&gt;</span>
     @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Salutation)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MailingCity)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MailingState)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MailingCountry)
-            </td>
-            <td>
+        <span class="kwrd">&lt;</span><span class="html">tr</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>
+                @Html.DisplayFor(modelItem =<span class="kwrd">&gt;</span> item.Salutation)
+            <span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>
+                @Html.DisplayFor(modelItem =<span class="kwrd">&gt;</span> item.FirstName)
+            <span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>
+                @Html.DisplayFor(modelItem =<span class="kwrd">&gt;</span> item.LastName)
+            <span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>
+                @Html.DisplayFor(modelItem =<span class="kwrd">&gt;</span> item.MailingCity)
+            <span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>
+                @Html.DisplayFor(modelItem =<span class="kwrd">&gt;</span> item.MailingState)
+            <span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>
+                @Html.DisplayFor(modelItem =<span class="kwrd">&gt;</span> item.MailingCountry)
+            <span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">td</span><span class="kwrd">&gt;</span>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                 @Html.ActionLink("Details", "Details", new { id = item.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
-        </tr>
+            <span class="kwrd">&lt;/</span><span class="html">td</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">tr</span><span class="kwrd">&gt;</span>
     }
-</table>
+<span class="kwrd">&lt;/</span><span class="html">table</span><span class="kwrd">&gt;</span>
 </div>
 
 
