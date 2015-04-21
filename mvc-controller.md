@@ -14,6 +14,7 @@ In this module, you set up an MVC Controller to orchestrate the various views th
 # Implement the controller as follows:
 
 <button id="click2copy" data-clipboard-target="clipdata">Copy to Clipboard</button>
+
 ```csharp
 using Salesforce.Common.Models;
 using System;
