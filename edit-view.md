@@ -119,7 +119,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 ```
 
 
-<div style="display: none;" id="clipdata">
+<pre style="display: none;" id="clipdata">
 @model WebApplication1.Models.Salesforce.Contact
 @{
     ViewBag.Title = "Edit";
@@ -215,7 +215,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
-</div>
+</pre>
 
 
 

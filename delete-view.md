@@ -72,7 +72,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 </div>
 ```
 
-<div style="display: none;" id="clipdata">
+<pre style="display: none;" id="clipdata">
 @model WebApplication1.Models.Salesforce.Contact
 @{
     ViewBag.Title = "Delete";
@@ -122,7 +122,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
         <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
     }
 <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
-</div>
+</pre>
 
 
 

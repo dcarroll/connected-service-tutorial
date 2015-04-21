@@ -100,7 +100,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 ```
 
 
-<div style="display: none;" id="clipdata">
+<pre style="display: none;" id="clipdata">
 @model WebApplication1.Models.Salesforce.Contact
 @{
     ViewBag.Title = "View";
@@ -176,7 +176,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 <span class="kwrd">&lt;/</span><span class="html">p</span><span class="kwrd">&gt;</span>
-</div>
+</pre>
 
 
 

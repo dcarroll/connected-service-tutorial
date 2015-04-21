@@ -80,7 +80,8 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
     }
 </table>
 ```
-<div style="display: none;" id="clipdata">
+
+<pre style="display: none;" id="clipdata">
 @model IEnumerable<span class="kwrd">&lt;</span><span class="html">WebApplication1.Models.Salesforce.Contact</span><span class="kwrd">&gt;</span>
 @{
     ViewBag.Title = "Contacts";
@@ -139,7 +140,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
         <span class="kwrd">&lt;/</span><span class="html">tr</span><span class="kwrd">&gt;</span>
     }
 <span class="kwrd">&lt;/</span><span class="html">table</span><span class="kwrd">&gt;</span>
-</div>
+</pre>
 
 
 
