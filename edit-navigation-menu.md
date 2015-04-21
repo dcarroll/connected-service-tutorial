@@ -10,6 +10,8 @@ In this module, you will add new menu item to the sample menu to navigate to a l
 - Open Views\Shared\_Layout.cshtml.
 - Within the ```<ul class="nav navbar-nav">``` div, add the last ```<li>``` to your code:
 
+<button id="click2copy" data-clipboard-target="clipdata">Copy to Clipboard</button>
+
 ```html
 <ul class="nav navbar-nav">
     <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -21,7 +23,14 @@ In this module, you will add new menu item to the sample menu to navigate to a l
 
 
 
-
+<div style="display: none;" id="clipdata">
+<ul class="nav navbar-nav">
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("About", "About", "Home")</li>
+    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    <li>@Html.ActionLink("Salesforce Contacts", "Index", "Contacts")</li> 
+</ul>
+</div>
 
 
 <div class="row" style="margin-top:40px;">
