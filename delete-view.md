@@ -16,6 +16,10 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 - Replace the contents of the razor file with the following code:
 > **Note:** Replace the @model namespace WebApplication1 with the namespace of your project
 
+
+<button id="click2copy" data-clipboard-target="clipdata" data-text-type="code">Copy to Clipboard</button>
+
+
 ```html
 @model WebApplication1.Models.Salesforce.Contact
 @{
@@ -68,7 +72,57 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 </div>
 ```
 
-
+<div style="display: none;" id="clipdata">
+@model WebApplication1.Models.Salesforce.Contact
+@{
+    ViewBag.Title = "Delete";
+}
+<span class="kwrd">&lt;</span><span class="html">h2</span><span class="kwrd">&gt;</span>Delete<span class="kwrd">&lt;/</span><span class="html">h2</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">h3</span><span class="kwrd">&gt;</span>Are you sure you want to delete this?<span class="kwrd">&lt;/</span><span class="html">h3</span><span class="kwrd">&gt;</span>
+<span class="kwrd">&lt;</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">h4</span><span class="kwrd">&gt;</span>Contact<span class="kwrd">&lt;/</span><span class="html">h4</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">hr</span> <span class="kwrd">/&gt;</span>
+    <span class="kwrd">&lt;</span><span class="html">dl</span> <span class="attr">class</span><span class="kwrd">="dl-horizontal"</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.FirstName)
+        <span class="kwrd">&lt;/</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+            @Html.DisplayFor(model =<span class="kwrd">&gt;</span> model.FirstName)
+        <span class="kwrd">&lt;/</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.LastName)
+        <span class="kwrd">&lt;/</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+            @Html.DisplayFor(model =<span class="kwrd">&gt;</span> model.LastName)
+        <span class="kwrd">&lt;/</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.MailingCity)
+        <span class="kwrd">&lt;/</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+            @Html.DisplayFor(model =<span class="kwrd">&gt;</span> model.MailingCity)
+        <span class="kwrd">&lt;/</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.MailingState)
+        <span class="kwrd">&lt;/</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+            @Html.DisplayFor(model =<span class="kwrd">&gt;</span> model.MailingState)
+        <span class="kwrd">&lt;/</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+            @Html.DisplayNameFor(model =<span class="kwrd">&gt;</span> model.MailingCountry)
+        <span class="kwrd">&lt;/</span><span class="html">dt</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+            @Html.DisplayFor(model =<span class="kwrd">&gt;</span> model.MailingCountry)
+        <span class="kwrd">&lt;/</span><span class="html">dd</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">dl</span><span class="kwrd">&gt;</span>
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-actions no-color"</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">="submit"</span> <span class="attr">value</span><span class="kwrd">="Delete"</span> <span class="attr">class</span><span class="kwrd">="btn btn-default"</span> <span class="kwrd">/&gt;</span> |
+            @Html.ActionLink("Back to List", "Index")
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    }
+<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+</div>
 
 
 
