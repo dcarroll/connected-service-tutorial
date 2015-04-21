@@ -145,7 +145,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="edit-navigate-menu.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+<a href="edit-navigation-menu.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
 <a href="detail-view.html" class="btn btn-default pull-right">Next <i class="glyphicon glyphicon-chevron-right"></i></a>
 </div>
 </div>
