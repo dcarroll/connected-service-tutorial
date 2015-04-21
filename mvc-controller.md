@@ -17,7 +17,6 @@ In this module, you set up an MVC Controller to orchestrate the various views th
 
 
 ```csharp
-<pre>
 using Salesforce.Common.Models;
 using System;
 using System.Collections.Generic;
@@ -264,7 +263,6 @@ namespace WebApplication1.Controllers
         }
     }
 } 
-</pre>
 ```
 
 
@@ -272,7 +270,7 @@ namespace WebApplication1.Controllers
 
 
 
-<pre style="display: none;" id="html">
+<pre style="display: none;" id="clipdata">
 <span class="kwrd">using</span> Salesforce.Common.Models;
 <span class="kwrd">using</span> System;
 <span class="kwrd">using</span> System.Collections.Generic;
