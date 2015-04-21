@@ -30,9 +30,9 @@ namespace WebApplication1.Controllers
 {
     public class ContactsController : Controller
     {
-        // Note: the SOQL Field list, and Binding Property list have subtle differences as custom properties may be mapped with the JsonProperty attribute to remove __c
+        /* Note: the SOQL Field list, and Binding Property list have subtle differences as custom properties may be mapped with the JsonProperty attribute to remove __c */
         const string _ContactsPostBinding = "Id,Salutation,FirstName,LastName,MailingStreet,MailingCity,MailingState,MailingPostalCode,MailingCountry,Phone,Email";
-        // GET: Contacts
+        /* GET: Contacts */
         public async Task<ActionResult> Index()
         {
             IEnumerable<Contact> selectedContacts = Enumerable.Empty<Contact>();
@@ -161,7 +161,7 @@ namespace WebApplication1.Controllers
                 selectedContacts = await SalesforceService.MakeAuthenticatedClientRequestAsync(
                 async (client) =>
                 {
-                    // Query the properties you'll display for the user to confirm they wish to delete this Contact
+                    /* Query the properties you'll display for the user to confirm they wish to delete this Contact*/
                     QueryResult<Contact> contacts =
                         await client.QueryAsync<Contact>(string.Format("SELECT Id, FirstName, LastName, MailingCity, MailingState, MailingCountry From Contact Where Id='{0}'", id));
                     return contacts.records;
@@ -269,7 +269,7 @@ namespace WebApplication1.Controllers
 
 
 
-<div style="display: none;" id="clipdata">
+<pre style="display: none;" id="clipdata">
 <span class="kwrd">using</span> Salesforce.Common.Models;
 <span class="kwrd">using</span> System;
 <span class="kwrd">using</span> System.Collections.Generic;
@@ -516,7 +516,7 @@ namespace WebApplication1.Controllers
         }
     }
 }
-</div>
+</pre   >
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
