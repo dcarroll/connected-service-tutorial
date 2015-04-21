@@ -17,7 +17,7 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 > **Note:** Replace the @model namespace WebApplication1 with the namespace of your project
 
 
-<button id="click2copy" data-clipboard-target="clipdata" data-text-type="html">Copy to Clipboard</button>
+<button id="click2copy" data-clipboard-target="clipdata" data-text-type="code">Copy to Clipboard</button>
 
 ```html
 @model IEnumerable<WebApplication1.Models.Salesforce.Contact>
