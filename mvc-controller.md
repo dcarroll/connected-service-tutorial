@@ -269,7 +269,7 @@ namespace WebApplication1.Controllers
 
 
 
-<div style="display: none;" name="clipdata">
+<div style="display: none;" id="clipdata">
 using Salesforce.Common.Models;
 using System;
 using System.Collections.Generic;
