@@ -16,6 +16,10 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 - Replace the contents of the razor file with the following code:
 > **Note:** Replace the @model namespace WebApplication1 with the namespace of your project
 
+
+<button id="click2copy" data-clipboard-target="clipdata" data-text-type="code">Copy to Clipboard</button>
+
+
 ```html
 @model WebApplication1.Models.Salesforce.Contact
 @{
@@ -115,7 +119,103 @@ Using MVC Scaffolding, we can build out the view based on the Model classes scaf
 ```
 
 
-
+<div style="display: none;" id="clipdata">
+@model WebApplication1.Models.Salesforce.Contact
+@{
+    ViewBag.Title = "Edit";
+}
+<span class="kwrd">&lt;</span><span class="html">h2</span><span class="kwrd">&gt;</span>Edit<span class="kwrd">&lt;/</span><span class="html">h2</span><span class="kwrd">&gt;</span>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-horizontal"</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">h4</span><span class="kwrd">&gt;</span>Contact<span class="kwrd">&lt;/</span><span class="html">h4</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">hr</span> <span class="kwrd">/&gt;</span>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model =<span class="kwrd">&gt;</span> model.Id)
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.Salutation, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.Salutation, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.Salutation, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.FirstName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.FirstName, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.LastName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.LastName, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.MailingStreet, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.MailingStreet, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.MailingStreet, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.MailingCity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.MailingCity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.MailingCity, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.MailingState, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.MailingState, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.MailingState, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.MailingPostalCode, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.MailingPostalCode, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.MailingPostalCode, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.MailingCountry, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.MailingCountry, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.MailingCountry, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.Phone, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            @Html.LabelFor(model =<span class="kwrd">&gt;</span> model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-10"</span><span class="kwrd">&gt;</span>
+                @Html.EditorFor(model =<span class="kwrd">&gt;</span> model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model =<span class="kwrd">&gt;</span> model.Email, "", new { @class = "text-danger" })
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="form-group"</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">div</span> <span class="attr">class</span><span class="kwrd">="col-md-offset-2 col-md-10"</span><span class="kwrd">&gt;</span>
+                <span class="kwrd">&lt;</span><span class="html">input</span> <span class="attr">type</span><span class="kwrd">="submit"</span> <span class="attr">value</span><span class="kwrd">="Save"</span> <span class="attr">class</span><span class="kwrd">="btn btn-default"</span> <span class="kwrd">/&gt;</span>
+            <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+}
+<span class="kwrd">&lt;</span><span class="html">div</span><span class="kwrd">&gt;</span>
+    @Html.ActionLink("Back to List", "Index")
+<span class="kwrd">&lt;/</span><span class="html">div</span><span class="kwrd">&gt;</span>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+</div>
 
 
 
