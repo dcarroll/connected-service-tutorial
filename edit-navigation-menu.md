@@ -10,6 +10,7 @@ In this module, you will add new menu item to the sample menu to navigate to a l
 - Open Views\Shared\_Layout.cshtml.
 - Within the ```<ul class="nav navbar-nav">``` div, add the last ```<li>``` to your code:
 
+
 <button id="click2copy" data-clipboard-target="clipdata" data-text-type="html">Copy to Clipboard</button>
 
 ```html
@@ -35,7 +36,7 @@ In this module, you will add new menu item to the sample menu to navigate to a l
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="mvc_controller.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
+<a href="mvc-controller.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> Previous</a>
 <a href="index-list-view.html" class="btn btn-default pull-right">Next <i class="glyphicon glyphicon-chevron-right"></i></a>
 </div>
 </div>
